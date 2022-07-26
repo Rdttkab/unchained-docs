@@ -1,0 +1,55 @@
+@import 'tailwindcss/base';
+@import './fonts.css';
+@import './docsearch.css';
+@import './prism.css';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.warning {
+  color: red;
+  font-size: 1rem;
+  padding: 1rem;
+  border: 1px solid red;
+}
+
+.info {
+  color: #1f5cb4;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 1rem;
+  border: 1px solid #1f5cb4;
+}
+
+codes {
+  color: black;
+}
+.normal {
+  color: black;
+}
+
+ol li {
+  margin-bottom: 2rem;
+}
+
+.launch-card-wrapper {
+  padding: 0 32px;
+}
+a.launch-button-mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .launch-card-wrapper {
+    padding: 0;
+  }
+
+  a.launch-button {
+    display: none;
+  }
+
+  a.launch-button-mobile {
+    margin-top: 16px;
+    margin-bottom: 64px;
+    display: flex;
+  }
+}
